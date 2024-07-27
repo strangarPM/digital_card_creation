@@ -219,11 +219,10 @@
 
                     if(response.code == 200) {
 
-                        swal({
-                            title : response.message,
-                            type: 'success',
-                            icon: 'success'
-                        });
+                        let token = response.data.token;
+                        window.localStorage.setItem('user_token', 'Bearer ' + token);
+                        document.cookie = 'user_token=Bearer ' + token + '; path=/';
+                        window.location = '{{route('user.dashboard')}}';
 
                     } else {
                         swal({

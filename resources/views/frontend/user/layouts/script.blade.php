@@ -55,7 +55,7 @@
             success: function (data) {
                 localStorage.clear();
                 document.cookie = "user_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                window.location = '{{route('admin.login')}}';
+                window.location = '{{route('login')}}';
             },
             error: function (err) {
                 swal({text: err, icon: "error", timer: 2000});

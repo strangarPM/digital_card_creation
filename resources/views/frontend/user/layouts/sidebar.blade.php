@@ -1,7 +1,7 @@
 <div class="sidebar-wrapper">
     <div>
         <div class="logo-wrapper">
-            <a href="{{route('admin.home')}}" data-bs-original-title="" title="">
+            <a href="{{route('user.dashboard')}}" data-bs-original-title="" title="">
                 <img src="{{asset('assets/images/logo/company.svg')}}" style="width: 195px;">
             </a>
             <div class="back-btn"><i class="fa fa-angle-left"></i></div>
@@ -16,7 +16,7 @@
                 </svg>
             </div>
         </div>
-        <div class="logo-icon-wrapper"><a href="{{route('admin.home')}}"><img class="img-fluid"
+        <div class="logo-icon-wrapper"><a href="{{route('user.dashboard')}}"><img class="img-fluid"
                                                                  src="{{asset('assets/images/logo/ob-logo-32x32.png')}}"
                                                                  alt=""></a></div>
         <nav class="sidebar-main">
@@ -44,22 +44,9 @@
                                             <div class="mobile-back text-end"><span>Back</span><i
                                                         class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                                         </li>
-
+                                        
                                         <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
-                                                                    href="{{route('admin.home')}}">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                     class="feather feather-home">
-                                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                                </svg>
-                                                <span>Home</span>
-                                                <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                                            </a></li>
-
-                                        <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
-                                            href="{{route('admin.add-room')}}">
+                                            href="{{route('user.add-card')}}">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -67,12 +54,11 @@
                                                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                             </svg>
-                                            <span>Add Room</span>
+                                            <span>Add Card</span>
                                             <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                                         </a></li>
-
                                         <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
-                                            href="{{route('admin.room-list')}}">
+                                            href="{{route('user.list-card')}}">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -80,10 +66,9 @@
                                                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                             </svg>
-                                            <span>Room List</span>
+                                            <span>Card List</span>
                                             <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                                         </a></li>
-
                                     </div>
                                 </div>
                             </div>

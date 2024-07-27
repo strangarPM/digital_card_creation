@@ -44,9 +44,9 @@
         let is_dark_mode_enable = localStorage.getItem("is_dark_mode_enable");
 
         try {
-            // if (token == null) {
-            //     window.location = '{{route('admin.login')}}';
-            // }
+            if (token == null) {
+                window.location = '{{route('login')}}';
+            }
         } catch (e) {
             swal({text: e.print, icon: "error", timer: 2000});
             //showAlertMessage(0, e.print);

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('admin.layouts.head')
+@include('frontend.user.layouts.head')
 <body>
 <script>
     if(is_dark_mode_enable == 1){
@@ -25,19 +25,19 @@
 <!-- page-wrapper Start-->
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
     <!-- Page Header Start-->
-@include('admin.layouts.header')
+@include('frontend.user.layouts.header')
 <!-- Page Header Ends                              -->
     <!-- Page Body Start-->
     <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
-    @include('admin.layouts.sidebar')
+    @include('frontend.user.layouts.sidebar')
     <!-- Page Sidebar Ends-->
     @yield('content')
     <!-- footer start-->
-        @include('admin.layouts.footer')
+        @include('frontend.user.layouts.footer')
     </div>
 </div>
-@include('admin.layouts.script')
+@include('frontend.user.layouts.script')
 <!-- login js-->
 <!-- Plugin used-->
 </body>
