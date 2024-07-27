@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="vi">
+
+
+<!-- Mirrored from tapvcard.com/password/reset by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Jul 2024 09:11:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="Zh7I0I7mJ0GqsUDl2Jhnmtf9LOgpm7DWrgXCZDiU">
+
+    
+        <title>Reset Password</title>
+    
+    
+    <script src="../../www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- CSS files -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../frontend/css/tailwind.min.css">
+    <link rel="stylesheet" href="../frontend/css/style.css">
+    <link rel="stylesheet" href="../css/sweetalert.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <script type="text/javascript" src="../js/alpine.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../frontend/js/main.js"></script>
+    <script type="text/javascript" src="../js/sweetalert.min.js"></script>
+        </head>
+
+<body class="antialiased bg-body text-body font-body" dir="ltr">
+    <div>
+                <section>
+    <div class="flex flex-wrap">
+        <div class="pt-6 lg:pt-16 pb-6 w-full lg:w-1/2">
+            <div class="max-w-md mx-auto">
+                <div class="mb-6 lg:mb-20 w-full px-3 flex items-center justify-between"><a class="text-3xl font-bold leading-none" href="../index.html">tapvcard.com</a></div>
+                <div>
+                    <div class="mb-6 px-3">
+                        <h3 class="text-2xl font-bold">Đặt lại mật khẩu</h3>
+                    </div>
+
+                    
+                    <form method="POST" action="https://tapvcard.com/password/email">
+                        <input type="hidden" name="_token" value="Zh7I0I7mJ0GqsUDl2Jhnmtf9LOgpm7DWrgXCZDiU">                        <div class="mb-3 flex p-4 mx-2 bg-gray-200 rounded">
+                            <input class="w-full text-xs bg-gray-200 outline-none "
+                                id="email" type="email" placeholder="Nhập email của bạn" name="email"
+                                value="" required autocomplete="email" autofocus>
+
+                            
+                            <svg class="h-6 w-6 ml-4 my-auto text-gray-300" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207">
+                                </path>
+                            </svg>
+                        </div>
+
+                        <div class="px-3 text-center">
+                            <button
+                                class="mb-2 w-full py-4 bg-red-600 hover:bg-red-700 rounded text-lg font-bold text-gray-50 transition duration-200">Gửi liên kết đặt lại mật khẩu</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block relative w-full lg:w-1/2 bg-red-600 mt-8">
+            <div class="absolute bottom-0 inset-x-0 mx-auto mb-12 max-w-xl text-center authentication">
+                <img class="lg:max-w-xl mx-auto" src="../frontend/assets/elements/home.svg" alt="FreeDigitalBusinessCardsmaker|tapvCardIndia">
+               </div>
+        </div>
+
+    </div>
+</section>
+        
+                <div class="fixed bottom-0 inset-x-0 z-50 js-cookie-consent cookie-consent">
+    <div class="max-w-md mx-4 md:mx-0 md:ml-10 mb-6 pt-8 bg-gray-800 text-white rounded-lg">
+        <div class="px-8 text-center">
+            <p class="font-bold font-heading">Chính sách cookie</p>
+            <p class="mb-5 mt-3 mb-6 text-gray-400 text-sm">Trải nghiệm của bạn trên trang web này sẽ được cải thiện bằng cách cho phép Cookie.</p>
+        </div>
+        <div class="flex border-t border-gray-700 text-center"><a onclick="closeCookie()"
+                class="inline-block w-1/2 py-4 text-sm rounded-bl-lg border-r border-gray-700 font-bold hover:bg-gray-700 transition duration-200"
+                href="#">Decline Cookies</a><a
+                class="inline-block w-1/2 py-4 text-sm rounded-br-lg text-white font-bold hover:bg-gray-700 transition duration-200 js-cookie-consent-agree cookie-consent__agree"
+                href="#">Cho phép Cookie</a></div>
+    </div>
+</div>
+    <script>
+
+        window.laravelCookieConsent = (function () {
+
+            const COOKIE_VALUE = 1;
+            const COOKIE_DOMAIN = 'tapvcard.com';
+
+            function consentWithCookies() {
+                setCookie('laravel_cookie_consent', COOKIE_VALUE, 7300);
+                hideCookieDialog();
+            }
+
+            function cookieExists(name) {
+                return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
+            }
+
+            function hideCookieDialog() {
+                const dialogs = document.getElementsByClassName('js-cookie-consent');
+
+                for (let i = 0; i < dialogs.length; ++i) {
+                    dialogs[i].style.display = 'none';
+                }
+            }
+
+            function setCookie(name, value, expirationInDays) {
+                const date = new Date();
+                date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
+                document.cookie = name + '=' + value
+                    + ';expires=' + date.toUTCString()
+                    + ';domain=' + COOKIE_DOMAIN
+                    + ';path=/'
+                    + ';samesite=lax';
+            }
+
+            if (cookieExists('laravel_cookie_consent')) {
+                hideCookieDialog();
+            }
+
+            const buttons = document.getElementsByClassName('js-cookie-consent-agree');
+
+            for (let i = 0; i < buttons.length; ++i) {
+                buttons[i].addEventListener('click', consentWithCookies);
+            }
+
+            return {
+                consentWithCookies: consentWithCookies,
+                hideCookieDialog: hideCookieDialog
+            };
+        })();
+    </script>
+
+            </div>
+
+    
+    <!-- Smooth Scroll -->
+    <script type="text/javascript" src="../js/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript" src="../frontend/js/footer.js"></script>
+
+                    </body>
+
+
+<!-- Mirrored from tapvcard.com/password/reset by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Jul 2024 09:11:23 GMT -->
+</html>
