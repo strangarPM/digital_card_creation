@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\web\loginController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 
 
 /*
@@ -29,4 +30,24 @@ Route::group(['prefix' => 'user','middleware' => ['auth:sanctum']], function() {
     Route::post('create_card',[UserController::class,'create_card'])->name('api.user.create_card');
     Route::get('card_list',[UserController::class,'card_list'])->name('api.user.card_list');
     Route::post('delete_card',[UserController::class,'delete_card'])->name('api.user.delete_card');
+});
+
+
+//Admin
+
+Route::group(['prefix' => 'admin'], function() {
+
+    
+    Route::post('doLogin',[AdminController::class, 'doLogin'])->name('admin.doLogin');
+
+    Route::group(['middleware' => ['auth:sanctum']], function() {
+
+        Route::post('getAllReportByAdmin',[AdminController::class,'getAllReportByAdmin']);
+        Route::post('doLogout',[AdminController::class,'doLogout']);
+
+        Route::get('getUserList',[AdminController::class,'getUserList']);
+        Route::post('updatePaymentStatus',[AdminController::class, 'updatePaymentStatus']);
+
+    });
+    
 });

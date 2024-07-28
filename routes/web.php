@@ -31,3 +31,14 @@ Route::group(['prefix' => 'user'] , function(){
     Route::view('/add-card','frontend.user.cards.add_card')->name('user.add-card');
     Route::view('/list-card','frontend.user.cards.list_card')->name('user.list-card');
 });
+
+
+//Admin
+Route::group(['prefix' => 'admin'], function() {
+
+    Route::view('login', 'admin.authentication.login')->name('admin.login');
+    Route::view('home', 'admin.home')->name('admin.home');
+    Route::view('settings', 'admin.home')->name('admin.settings');
+    Route::view('add-room','admin.add-room')->name('admin.add-room');
+    Route::view('user-list','admin.user-list')->name('admin.user-list');
+});

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="Zh7I0I7mJ0GqsUDl2Jhnmtf9LOgpm7DWrgXCZDiU">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
     <title>Sign In</title>
